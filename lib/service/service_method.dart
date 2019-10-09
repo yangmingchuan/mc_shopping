@@ -14,6 +14,7 @@ Future getHomePageContent() async{
     var formData = {'lon':'115.02932','lat':'35.76189'};
     response = await dio.post(servicePath['homePageContext'],data:formData);
     if(response.statusCode==200){
+      print('首页轮播信息：${response.data}');
       return response.data;
     }else{
       throw Exception('后端接口出现异常，请检测代码和服务器情况.........');

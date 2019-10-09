@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 /// ios 风格
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'cart_page.dart';
 import 'category_page.dart';
@@ -51,6 +52,8 @@ class _State extends State<IndexPages> {
 
   @override
   Widget build(BuildContext context) {
+    ///初始化 宽高适配工具
+    ScreenUtil.instance = ScreenUtil(width: 750, height: 1280)..init(context);
     return Scaffold(
       backgroundColor: Color.fromARGB(1, 244, 244, 244),
       bottomNavigationBar: BottomNavigationBar(

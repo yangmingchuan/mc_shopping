@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         title: '大白商城',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primaryColor: Colors.lightBlue
+          primaryColor: Colors.red
         ),
         home:IndexPages(),
       ),
