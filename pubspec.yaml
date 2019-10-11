@@ -31,6 +31,8 @@ dependencies:
   flutter_screenutil: ^0.5.3
   # 拨打电话 网页跳转
   url_launcher: ^5.0.1
+  # 上拉加载
+  flutter_easyrefresh: ^2.0.4
 
 dev_dependencies:
   flutter_test:

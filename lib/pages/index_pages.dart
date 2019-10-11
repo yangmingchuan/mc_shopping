@@ -9,6 +9,8 @@ import 'home_page.dart';
 import 'member_page.dart';
 
 /// 首页
+///Dart中的可选参数，直接使用“{}”(大括号)就可以了。
+///可选参数在调用的时候必须使用 paramName:value 的形式。
 
 class IndexPages extends StatefulWidget {
   @override
@@ -37,7 +39,7 @@ class _State extends State<IndexPages> {
   ];
 
   /// 各个界面 集合
-  final List tabBodies = [
+  final List<Widget> tabBodies = [
     HomePage(),CategoryPage(),CartPage(),MemberPage()
   ];
 
@@ -68,7 +70,12 @@ class _State extends State<IndexPages> {
           });
         },
       ),
-      body: currentPage,
+        /// 为了可以保存状态 需要嵌套一个 IndexedStack （堆栈需要 传入tab列表和下标）
+        body: IndexedStack(
+            index: currentIndex,
+            /// 列表需要的对象是 list<Widget> 需要及时更正对象类型是否正确
+            children: tabBodies
+        )
     );
   }
 }
