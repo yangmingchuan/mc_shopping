@@ -56,6 +56,9 @@ class _State extends State<IndexPages> {
   Widget build(BuildContext context) {
     ///初始化 宽高适配工具
     ScreenUtil.instance = ScreenUtil(width: 750, height: 1280)..init(context);
+    print('屏幕高度${ScreenUtil().scaleHeight}');
+    print('屏幕宽度${ScreenUtil().scaleWidth}');
+
     return Scaffold(
       backgroundColor: Color.fromARGB(1, 244, 244, 244),
       bottomNavigationBar: BottomNavigationBar(

@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/material_footer.dart';
 import 'package:mc_shopping/config/httpHeaders.dart';
 import 'package:mc_shopping/service/service_method.dart';
-import 'package:mc_shopping/weight/AdBanner.dart';
-import 'package:mc_shopping/weight/FloorContent.dart';
-import 'package:mc_shopping/weight/LeaderPhone.dart';
-import 'package:mc_shopping/weight/Recommend.dart';
-import 'package:mc_shopping/weight/SwiperDiy.dart';
-import 'package:mc_shopping/weight/TopNavigator.dart';
+import 'package:mc_shopping/weight/home/AdBanner.dart';
+import 'package:mc_shopping/weight/home/FloorContent.dart';
+import 'package:mc_shopping/weight/home/LeaderPhone.dart';
+import 'package:mc_shopping/weight/home/Recommend.dart';
+import 'package:mc_shopping/weight/home/SwiperDiy.dart';
+import 'package:mc_shopping/weight/home/TopNavigator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 
