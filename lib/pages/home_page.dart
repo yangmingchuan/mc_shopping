@@ -76,8 +76,7 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin{
               List<Map> floor2 = (data['data']['floor2'] as List).cast(); //楼层2商品和图片
               List<Map> floor3 = (data['data']['floor3'] as List).cast(); //楼层3商品和图片
 
-
-            /// ScrollView 同android  => 改为 EasyRefresh ，可提供上拉加载更多
+              /// ScrollView 同android  => 改为 EasyRefresh ，可提供上拉加载更多
               return EasyRefresh(
                 footer: MaterialFooter(
                   backgroundColor: Colors.white,

@@ -11,7 +11,7 @@ class Recommend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: ScreenUtil().setHeight(330),
+      height: ScreenUtil().setHeight(350),
       margin: EdgeInsets.only(top: 10.0),
       child: Column(
         children: <Widget>[
@@ -31,7 +31,7 @@ class Recommend extends StatelessWidget {
         print('点击 推荐 item');
       },
       child: Container(
-        height: ScreenUtil().setHeight(250),
+        height: ScreenUtil().setHeight(270),
         width: ScreenUtil().setWidth(250),
         padding: EdgeInsets.all(8.0),
         /// 设置 左右间隔分割线
@@ -64,7 +64,7 @@ class Recommend extends StatelessWidget {
   /// 横向列表
   Widget _recommedHorList(){
     return Container(
-      height: ScreenUtil().setHeight(260),
+      height: ScreenUtil().setHeight(290),
       /// 设置列表创建者
       child: ListView.builder(
         itemBuilder: (context, index){
