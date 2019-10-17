@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/material_footer.dart';
 import 'package:mc_shopping/config/httpHeaders.dart';
+import 'package:mc_shopping/routers/Application.dart';
 import 'package:mc_shopping/service/service_method.dart';
 import 'package:mc_shopping/weight/home/AdBanner.dart';
 import 'package:mc_shopping/weight/home/FloorContent.dart';
@@ -163,7 +164,8 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin{
       List<Widget> listWidget = hotGoodsList.map((f){
         return InkWell(
           onTap: (){
-            print('点击热销 商品');
+            /// 路由跳转
+            Application.router.navigateTo(context,"/detail?id=${f['goodsId']}");
           },
           child: Container(
             // 这里 我设置的 屏幕 750，所以设置一般的 距离

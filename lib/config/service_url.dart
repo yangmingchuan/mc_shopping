@@ -9,4 +9,5 @@ const servicePath={
   /// 分类
   'getCategory': serviceUrl+'wxmini/getCategory', //商品类别信息
   'getMallGoods': serviceUrl+'wxmini/getMallGoods', //商品分类的商品列表
+  'getGoodDetailById':serviceUrl+'wxmini/getGoodDetailById',// 根据商品id 获取商品详情
 };

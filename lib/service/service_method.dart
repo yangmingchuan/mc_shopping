@@ -7,7 +7,6 @@ import 'package:mc_shopping/config/service_url.dart';
 /// 公用 post dio请求方法
 Future requestPost(url,{formData})async{
   try{
-    print('开始获取数据...............');
     Response response;
     Dio dio = new Dio();
     dio.options.contentType="application/x-www-form-urlencoded";

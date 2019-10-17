@@ -219,8 +219,8 @@ class _CategoryGoodsListState extends State<CategoryGoodsList> {
                           toastLength: Toast.LENGTH_SHORT,
                           gravity: ToastGravity.CENTER,
                           timeInSecForIos: 1,
-                          backgroundColor: Colors.pink,
-                          textColor: Colors.white,
+                          backgroundColor: Colors.white,
+                          textColor: Colors.black12,
                           fontSize: 16.0
                       );
                     }else{
