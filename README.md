@@ -2,6 +2,8 @@
 
 > 这是一个小白，通过观看临摹 jspang 的一个 电商Demo。
 
+[jspang Flutter 学习地址](https://jspang.com/posts/2019/03/01/flutter-shop.html)
+
 最近更新时间 ： 2019年10月18日17:06:34 
 
 最近版本 ： V1.0
