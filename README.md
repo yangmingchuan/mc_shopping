@@ -17,5 +17,6 @@
  
  
 ### 部分界面效果图 
-(https://github.com/yangmingchuan/mc_shopping/blob/master/img/mc_home.png)
+ ![image](https://github.com/yangmingchuan/mc_shopping/blob/master/img/mc_home.png)
+
 
