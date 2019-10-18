@@ -17,6 +17,7 @@ class CartProvide with ChangeNotifier{
     var temp=cartString==null?[]:json.decode(cartString.toString());
     //把获得值转变成List
     List<Map> tempList= (temp as List).cast();
+
   }
 
 }
