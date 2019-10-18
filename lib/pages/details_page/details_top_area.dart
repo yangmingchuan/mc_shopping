@@ -11,7 +11,11 @@ class DetailsTopArea extends StatelessWidget {
   Widget build(BuildContext context) {
     /// Provide Widget 如何数据发生改变 布局也会修改
     return Provide<DetailsInfoProvide>(
+
       builder: (context,child,value){
+        if(Provide.value<DetailsInfoProvide>(context).goodsInfo==null){
+          return Text('goodsInfo 暂时没有数据');
+        }
         var goodsInfo=Provide.value<DetailsInfoProvide>(context).goodsInfo.data.goodInfo;
 
         if(goodsInfo != null){
@@ -52,7 +56,7 @@ class DetailsTopArea extends StatelessWidget {
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
-            fontSize: ScreenUtil().setSp(30)
+            fontSize: ScreenUtil().setSp(35)
         ),
       ),
     );

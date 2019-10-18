@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:mc_shopping/provide/details_info.dart';
 import 'package:provide/provide.dart';
 
+import 'details_page/details_bottom.dart';
+import 'details_page/details_explain.dart';
+import 'details_page/details_tabbar.dart';
+import 'details_page/details_top_area.dart';
+import 'details_page/detals_web.dart';
+
 
 
 /// 商品详情界面
@@ -29,9 +35,24 @@ class DetailsPage extends StatelessWidget {
       builder: (context,snapshot){
         if(snapshot.hasData){
           return Container(
-              child:Row(
+            /// 使用 row会出现 右侧 像素越界。
+            /// 改为 stack + ListView
+              child:Stack(
                 children: <Widget>[
+                  ListView(
+                    children: <Widget>[
+                      DetailsTopArea(),
+                      //DetailsExplain(),
+                      DetailsTabbar(),
+                      DetailsWeb(),
 
+                    ],
+                  ),
+                  Positioned(
+                      bottom: 0,
+                      left: 0,
+                      child: DetailsBottom()
+                  )
                 ],
               )
           );
