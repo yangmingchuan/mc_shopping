@@ -17,6 +17,12 @@
  
  
 ### 部分界面效果图 
- ![image](https://github.com/yangmingchuan/mc_shopping/blob/master/img/mc_home.png)
+<p align="center">
+	<img src="https://github.com/yangmingchuan/mc_shopping/blob/master/img/mc_home.png" alt="Sample"  width="250" height="140">
+	<p align="center">
+		<em>图片示例2</em>
+	</p>
+</p>
+
 
 
