@@ -24,5 +24,12 @@
 	</p>
 </p>
 
+<p align="center">
+	<img src="https://github.com/yangmingchuan/mc_shopping/blob/master/img/mc_list.png"  width="500" height="940">
+	<p align="center">
+		<em>图片示例2</em>
+	</p>
+</p>
+
 
 
