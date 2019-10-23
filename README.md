@@ -7,7 +7,10 @@
 最近更新时间 ： 2019年10月23日13:58:42
 
 最近版本 ： V1.1
+
+
 未来版本： V 1.2 （可能会尝试添加 高德地图 极光推送的接入，以及flutter 方面的打包）
+[jspang 第三方库接入教程](https://jspang.com/posts/2019/03/01/flutter-shop.html#%E7%AC%AC67%E8%AF%BE%EF%BC%9A%E5%8A%A0%E9%A4%90-%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8)
 
 ### 主要使用的第三方库
  - [dio 网络请求库](https://github.com/flutterchina/dio)  （相当好用）
