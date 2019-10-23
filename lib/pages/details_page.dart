@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mc_shopping/provide/details_info.dart';
 import 'package:provide/provide.dart';
-
 import 'details_page/details_bottom.dart';
-import 'details_page/details_explain.dart';
 import 'details_page/details_tabbar.dart';
 import 'details_page/details_top_area.dart';
 import 'details_page/detals_web.dart';
 
-
-
+///
 /// 商品详情界面
+///
 class DetailsPage extends StatelessWidget {
   // 商品 id
   final String goodsId;
@@ -42,10 +40,10 @@ class DetailsPage extends StatelessWidget {
                   ListView(
                     children: <Widget>[
                       DetailsTopArea(),
+                      //商品详情
                       //DetailsExplain(),
                       DetailsTabbar(),
                       DetailsWeb(),
-
                     ],
                   ),
                   Positioned(

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:mc_shopping/model/details.dart';
 import 'package:mc_shopping/service/service_method.dart';
 
-
+///
+/// 商品详情 Provide
 ///
 class DetailsInfoProvide with ChangeNotifier{
 

@@ -37,7 +37,6 @@ class DetailsTabbar extends StatelessWidget {
   Widget _myTabBarLeft(BuildContext context,bool isLeft){
     return InkWell(
       onTap: (){
-
         Provide.value<DetailsInfoProvide>(context).changeLeftAndRight('left');
       },
       child: Container(

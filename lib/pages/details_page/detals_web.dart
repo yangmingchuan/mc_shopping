@@ -16,7 +16,7 @@ class DetailsWeb extends StatelessWidget {
       builder: (context,child,val){
         var isLeft = Provide.value<DetailsInfoProvide>(context).isLeft;
         /// 如果是左侧 显示网页 商品详情web
-        if(isLeft){
+        if(isLeft && goodsDetail!= null){
           return  Container(
             child: Html(
                 data:goodsDetail
