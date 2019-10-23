@@ -13,13 +13,17 @@ class CartBottom extends StatelessWidget {
       margin: EdgeInsets.all(5.0),
       color: Colors.white,
       width: ScreenUtil().setWidth(750),
-      child: Row(
-        children: <Widget>[
-          selectAllBtn(context),
-          allPriceArea(context),
-          goButton(context)
-        ],
-      ),
+        child: Provide<CartProvide>(
+          builder: (context,child,childCategory){
+            return  Row(
+              children: <Widget>[
+                selectAllBtn(context),
+                allPriceArea(context),
+                goButton(context)
+              ],
+            );
+          },
+        )
     );
   }
 
@@ -27,7 +31,6 @@ class CartBottom extends StatelessWidget {
   /// 全选按钮
   Widget selectAllBtn(context){
     bool isAllCheck = Provide.value<CartProvide>(context).isAllCheck;
-
     return Container(
       child: Row(
         children: <Widget>[
@@ -36,7 +39,6 @@ class CartBottom extends StatelessWidget {
             activeColor: Colors.pink,
             onChanged: (bool val){
               Provide.value<CartProvide>(context).changeAllCheckBtnState(val);
-
             },
           ),
           Text('全选')
@@ -50,7 +52,7 @@ class CartBottom extends StatelessWidget {
     double allPrice = Provide.value<CartProvide>(context).allPrice;
 
     return Container(
-      width: ScreenUtil().setWidth(430),
+      width: ScreenUtil().setWidth(450),
       alignment: Alignment.centerRight,
       child: Column(
         children: <Widget>[
@@ -58,7 +60,7 @@ class CartBottom extends StatelessWidget {
             children: <Widget>[
               Container(
                 alignment: Alignment.centerRight,
-                width: ScreenUtil().setWidth(280),
+                width: ScreenUtil().setWidth(230),
                 child: Text(
                     '合计:',
                     style:TextStyle(
@@ -69,7 +71,7 @@ class CartBottom extends StatelessWidget {
 
               Container(
                 alignment: Alignment.centerLeft,
-                width: ScreenUtil().setWidth(150),
+                width: ScreenUtil().setWidth(200),
                 child: Text(
                     '￥$allPrice',
                     style:TextStyle(

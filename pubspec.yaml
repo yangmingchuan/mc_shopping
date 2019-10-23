@@ -40,7 +40,7 @@ dependencies:
   # 路由
   fluro: "^1.5.1"
   # flutter 加载 html 工具
-  flutter_html: ^0.11.0
+  flutter_html: ^0.9.6
   # shared_preferences key-val 本地持久化
   shared_preferences: ^0.5.1
 

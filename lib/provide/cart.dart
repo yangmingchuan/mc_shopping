@@ -90,6 +90,7 @@ class CartProvide with ChangeNotifier{
       List<Map> tempList= (json.decode(cartString.toString()) as List).cast();
       allPrice=0;
       allGoodsCount=0;
+      isAllCheck=true;
       tempList.forEach((item){
         // 循环计算价格
         if(item['isCheck']){

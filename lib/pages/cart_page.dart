@@ -39,7 +39,6 @@ class CartPage extends StatelessWidget {
                       },
                     ),
 
-
                     /// 底部的购物车 信息按钮
                     Positioned(
                       bottom:0,

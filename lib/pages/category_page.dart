@@ -10,6 +10,7 @@ import 'package:mc_shopping/model/CategoryGoodsList.dart';
 import 'package:mc_shopping/model/CategoryModel.dart';
 import 'package:mc_shopping/provide/CategoryGoodsListProvide.dart';
 import 'package:mc_shopping/provide/ChildCategory.dart';
+import 'package:mc_shopping/routers/Application.dart';
 import 'package:mc_shopping/service/service_method.dart';
 import 'package:mc_shopping/weight/RightCategoryNav.dart';
 import 'package:provide/provide.dart';
@@ -76,7 +77,7 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
       builder: (context,child,val){
         ///加载一级列表的同时 开始加载二级列表数据
         _getGoodList(context);
-
+        listIndex=val.categoryIndex;
         return Container(
           width: ScreenUtil().setWidth(170),
           decoration: BoxDecoration(
@@ -224,7 +225,7 @@ class _CategoryGoodsListState extends State<CategoryGoodsList> {
                           fontSize: 16.0
                       );
                     }else{
-
+                      /// 记载更多
                       _getMoreList();
                     }
 
@@ -272,7 +273,9 @@ class _CategoryGoodsListState extends State<CategoryGoodsList> {
   ///
   Widget _ListWidget(List newList,int index){
     return InkWell(
-        onTap: (){},
+        onTap: (){
+          Application.router.navigateTo(context,"/detail?id=${newList[index].goodsId}");
+        },
         child: Container(
           padding: EdgeInsets.only(top: 5.0,bottom: 5.0),
           decoration: BoxDecoration(

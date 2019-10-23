@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mc_shopping/model/CategoryModel.dart';
@@ -38,7 +37,7 @@ class TopNavigator extends StatelessWidget {
       CategoryModel category = CategoryModel.fromJson(data);
       List list = category.data;
       Provide.value<ChildCategory>(context).changeCategory(categroyId,index);
-      Provide.value<ChildCategory>(context).getChildCategory( list[index].bxMallSubDto,categroyId);
+      Provide.value<ChildCategory>(context).getChildCategory(list[index].bxMallSubDto,categroyId);
       /// 改变下标 home 界面会同步刷新 模拟出界面跳转的效果
       Provide.value<CurrentIndexProvide>(context).changeIndex(1);
     });

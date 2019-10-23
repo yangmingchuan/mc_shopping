@@ -25,6 +25,7 @@ class ChildCategory with ChangeNotifier{
   getChildCategory(List<BxMallSubDto> list,String id){
     categoryId=id;
     childIndex=0;
+    page=1;
     BxMallSubDto all=  BxMallSubDto();
     all.mallSubId='00';
     all.mallCategoryId='00';

@@ -9,12 +9,12 @@ import 'package:provide/provide.dart';
 class DetailsWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // 商品信息
-    var goodsDetail=Provide.value<DetailsInfoProvide>(context).goodsInfo.data.goodInfo.goodsDetail;
 
     return Provide<DetailsInfoProvide>(
       builder: (context,child,val){
         var isLeft = Provide.value<DetailsInfoProvide>(context).isLeft;
+        /// 商品信息 放在Provide 内部如果对象变化则会同步变化更新
+        var goodsDetail=Provide.value<DetailsInfoProvide>(context).goodsInfo.data.goodInfo.goodsDetail;
         /// 如果是左侧 显示网页 商品详情web
         if(isLeft && goodsDetail!= null){
           return  Container(
@@ -31,7 +31,6 @@ class DetailsWeb extends StatelessWidget {
           );
         }
       },
-
     );
   }
 }
