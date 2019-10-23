@@ -55,20 +55,20 @@
 <p align="center">
 	<img src="https://github.com/yangmingchuan/mc_shopping/blob/master/img/detail.png"  width="500" height="940">
 	<p align="center">
-		<em>分类界面</em>
+		<em>详情界面</em>
 	</p>
 </p>
 
 <p align="center">
 	<img src="https://github.com/yangmingchuan/mc_shopping/blob/master/img/cart.png"  width="500" height="940">
 	<p align="center">
-		<em>分类界面</em>
+		<em>购物车界面</em>
 	</p>
 </p>
 
 <p align="center">
 	<img src="https://github.com/yangmingchuan/mc_shopping/blob/master/img/me.png"  width="500" height="940">
 	<p align="center">
-		<em>分类界面</em>
+		<em>我的界面</em>
 	</p>
 </p>
